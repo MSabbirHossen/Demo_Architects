@@ -13,6 +13,10 @@
   max-width: 1940px;
 }
 
+.bg-color {
+  background-color: rgba(255, 144, 14, 0.1);
+}
+
 .container {
   width: 1440px;
   margin: 0 auto;
@@ -27,12 +31,9 @@
 .description {
   font-size: 1rem;
   color: #727272;
-  text-align: center;
-  margin: 20px;
-}
+  text-align: left;
 
-.bg-color {
-  background-color: rgba(255, 144, 14, 0.1);
+  margin: 20px;
 }
 
 .btn {
@@ -41,10 +42,16 @@
   background-color: #ff900e;
   color: #fff;
   border-radius: 8px;
-  margin: 10px auto;
-
-  padding: 25px 20px;
+  margin: 50px auto;
+  border: none;
+  padding: 15px 10px;
   text-align: center;
+}
+.btn:hover {
+  cursor: pointer;
+  background-color: rgba(255, 143, 14, 0.75);
+  scale: 1.25;
+  color: black;
 }
 
 /* nav style  */
@@ -64,7 +71,7 @@
 
 /* banner styles starts here  */
 
-.brand-title {
+.banner-title {
   text-align: center;
   font-size: 4rem;
   font-weight: 700;
@@ -72,10 +79,43 @@
   margin: auto;
 }
 .container > .description {
-  /* margin: auto; */
+  margin: auto;
   width: 650px;
 }
 .container > img {
-  margin: auto;
+  margin: 0 auto;
   max-width: 1440px;
+  height: 700px;
+}
+
+.feature {
+  margin: 85px auto;
+  padding: 15px 5px;
+
+  gap: 10px;
+}
+.feature-img {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 5px;
+}
+.feature-description {
+  flex: 1;
+  margin-left: 75px;
+}
+.feature-description > h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+.gray-heading {
+  color: #727272;
+  font-weight: normal;
+}
+
+.yellow-heading {
+  color: #ff900e;
+}
+.feature-description > .description {
+  text-align: left;
 }
