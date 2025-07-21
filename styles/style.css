@@ -6,3 +6,76 @@
   font-weight: 400;
   font-style: normal;
 }
+
+/* Shared styles*/
+
+* {
+  max-width: 1940px;
+}
+
+.container {
+  width: 1440px;
+  margin: 0 auto;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.description {
+  font-size: 1rem;
+  color: #727272;
+  text-align: center;
+  margin: 20px;
+}
+
+.bg-color {
+  background-color: rgba(255, 144, 14, 0.1);
+}
+
+.btn {
+  width: 200px;
+  font-size: 1.25rem;
+  background-color: #ff900e;
+  color: #fff;
+  border-radius: 8px;
+  margin: 10px auto;
+
+  padding: 25px 20px;
+  text-align: center;
+}
+
+/* nav style  */
+
+.navbar {
+  padding: 30px;
+}
+
+.nav-item {
+  list-style: none;
+  margin-right: 2rem;
+}
+
+.nav-link {
+  text-decoration: none;
+}
+
+/* banner styles starts here  */
+
+.brand-title {
+  text-align: center;
+  font-size: 4rem;
+  font-weight: 700;
+  width: 850px;
+  margin: auto;
+}
+.container > .description {
+  /* margin: auto; */
+  width: 650px;
+}
+.container > img {
+  margin: auto;
+  max-width: 1440px;
+}
