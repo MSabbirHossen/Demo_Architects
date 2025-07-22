@@ -26,13 +26,13 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
+  gap: 10px;
 }
 
 .description {
   font-size: 1rem;
   color: #727272;
   text-align: left;
-
   margin: 20px;
 }
 
@@ -118,4 +118,52 @@
 }
 .feature-description > .description {
   text-align: left;
+}
+
+/* --------Experience section------------ */
+.experience {
+  width: 580px;
+  height: 1050px;
+  text-align: left;
+}
+.experience-title {
+  border-left: 5px solid #ff900e;
+  padding-left: 25px;
+  font-weight: 700;
+  font-size: 2.5rem;
+}
+.title-description {
+  text-align: left;
+  color: #727272;
+}
+.experience-card {
+  background-color: #f4f4f4;
+  width: 560px;
+  border-radius: 8px;
+  box-shadow: 1px black;
+  margin-top: 10px;
+  padding: 5px;
+  margin: 5px;
+}
+.badge-img {
+  width: 800px;
+  height: 1050px;
+  border: 1px solid;
+}
+.badge-img > img {
+  width: 700px;
+  height: 980px;
+  padding-left: 50px;
+}
+.badge {
+  width: 350px;
+  border-radius: 8px;
+  background-color: #ff900e;
+  color: #fff;
+  padding: 45px 25px;
+  text-align: center;
+  font-size: 2rem;
+}
+.badge > b {
+  font-size: 85px;
 }
