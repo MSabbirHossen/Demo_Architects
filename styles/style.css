@@ -148,7 +148,6 @@
 .badge-img {
   width: 800px;
   height: 1050px;
-  border: 1px solid;
 }
 .badge-img > img {
   width: 700px;
@@ -163,7 +162,41 @@
   padding: 45px 25px;
   text-align: center;
   font-size: 2rem;
+  transform: translate(-100px, -125px);
 }
 .badge > b {
   font-size: 85px;
+}
+/* ----------Facts Section------------- */
+
+.facts {
+  margin: 130px auto;
+}
+.title {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+.cards {
+  margin: 150px auto;
+  /* gap: 120px; */
+}
+.card {
+  width: 240px;
+  height: 240px;
+  border: 1px solid #ff900e;
+  border-radius: 8px;
+  padding: 40px 25px;
+  line-height: 0px;
+  text-align: center;
+}
+.card > img {
+  line-height: 0px;
+}
+.card > h5 {
+  font-size: 2.75rem;
+  font-weight: 800;
+}
+.card > .description {
+  text-align: center;
+  line-height: 0px;
 }
