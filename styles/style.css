@@ -30,7 +30,6 @@
 }
 
 .description {
-  font-size: 1rem;
   color: #727272;
   text-align: left;
   margin: 20px;
@@ -57,7 +56,9 @@
 /* --------Navbar section------------ */
 
 .navbar {
-  padding: 30px;
+  /* max-width: 1440px;
+  margin: 0 auto; */
+  position: sticky;
 }
 
 .nav-item {
@@ -70,44 +71,51 @@
 }
 
 /* --------Banner section------------ */
+/* .banner{
+  position: relative;
+} */
 
 .banner-title {
   text-align: center;
   font-size: 4rem;
   font-weight: 700;
-  width: 850px;
-  margin: auto;
-}
-.container > .description {
-  margin: auto;
-  width: 650px;
-}
-.container > img {
+  width: 50%;
   margin: 0 auto;
-  max-width: 1440px;
-  height: 700px;
 }
+.description > p {
+  margin: 0 auto;
+  width: 50%;
+}
+.banner > img {
+  width: 75%;
+  margin: 0 auto;
+}
+
+/* -----------Feature section-------- */
 
 .feature {
   margin: 85px auto;
   padding: 15px 5px;
-
   gap: 10px;
 }
+
 .feature-img {
   flex: 1;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 5px;
 }
+
 .feature-description {
   flex: 1;
   margin-left: 75px;
 }
+
 .feature-description > h2 {
   font-size: 2.5rem;
   font-weight: bold;
 }
+
 .gray-heading {
   color: #727272;
   font-weight: normal;
@@ -205,15 +213,12 @@
 /* ----------Sponsors Section------------- */
 
 .sponsors > h1 {
-  /* .sponsors > .description { */
   text-align: center;
   width: 450px;
-  /* height: 170px; */
   margin: 10px auto;
 }
 .sponsors > .description {
   text-align: center;
-  /* width: 450px; */
   margin: 0 auto;
 }
 
@@ -223,17 +228,34 @@
 }
 
 .gray-scale > img:hover {
-  margin: 75px auto;
   filter: grayscale(0%);
 }
 
 /* ----------Footer Section------------- */
 
 footer {
-  max-width: 1440px;
-  margin: 216px auto;
-  padding: 38px 210px;
+  margin: 130px auto;
+  padding: 38px;
   border-radius: 8px;
   text-align: center;
   font-size: 1.25rem;
+}
+
+/* ---------Small Screen-------- */
+
+@media (max-width: 576px) {
+  .banner > img {
+    width: 50%;
+    /* margin: 50px 240px 130px; */
+    margin: 0 auto;
+  }
+
+  /* .flex {
+    flex-direction: column;
+  } */
+
+  .feature-img {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
