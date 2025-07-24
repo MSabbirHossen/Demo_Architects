@@ -86,9 +86,9 @@
   margin: 0 auto;
   width: 50%;
 }
-.banner > img {
+.hero-image {
   width: 75%;
-  margin: 0 auto;
+  margin: 0 200px;
 }
 
 /* -----------Feature section-------- */
@@ -108,7 +108,7 @@
 
 .feature-description {
   flex: 1;
-  margin-left: 75px;
+  margin-left: 5rem;
 }
 
 .feature-description > h2 {
@@ -124,9 +124,6 @@
 .yellow-heading {
   color: #ff900e;
 }
-.feature-description > .description {
-  text-align: left;
-}
 
 /* --------Experience section------------ */
 
@@ -137,13 +134,16 @@
 }
 .experience-title {
   border-left: 5px solid #ff900e;
-  padding-left: 25px;
+  padding-left: 1.5rem;
   font-weight: 700;
   font-size: 2.5rem;
 }
 .title-description {
   text-align: left;
   color: #727272;
+}
+.experience-cards {
+  margin: 1rem;
 }
 .experience-card {
   background-color: #f4f4f4;
@@ -158,9 +158,10 @@
   width: 800px;
   height: 1050px;
 }
-.badge-img > img {
-  width: 700px;
-  height: 980px;
+.experience-image {
+  width: 90%;
+  height: auto;
+  align-self: flex-end;
   padding-left: 50px;
 }
 .badge {
@@ -186,29 +187,28 @@
   font-weight: bold;
 }
 .cards {
-  margin: 150px auto;
-  /* gap: 120px; */
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2.5rem;
+  margin: 1rem auto;
 }
 .card {
   width: 240px;
   height: 240px;
   border: 1px solid #ff900e;
   border-radius: 8px;
-  padding: 40px 25px;
+  /* padding: 40px 25px; */
   line-height: 0px;
   text-align: center;
 }
-.card > img {
-  line-height: 0px;
-}
-.card > h5 {
-  font-size: 2.75rem;
+
+.card-title {
+  font-size: 1.5rem;
   font-weight: 800;
 }
-.card > .description {
+/* .card-description {
   text-align: center;
-  line-height: 0px;
-}
+} */
 
 /* ----------Sponsors Section------------- */
 
@@ -243,19 +243,38 @@ footer {
 
 /* ---------Small Screen-------- */
 
-@media (max-width: 576px) {
-  .banner > img {
-    width: 50%;
-    /* margin: 50px 240px 130px; */
-    margin: 0 auto;
+@media (max-width: 600px) {
+  .flex {
+    flex-direction: column;
   }
 
-  /* .flex {
-    flex-direction: column;
-  } */
+  .hero-image {
+    width: 75%;
+    margin: 0 150px;
+  }
 
   .feature-img {
     display: grid;
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+
+  .gray-heading,
+  .yellow-heading,
+  .feature-description > .description {
+    text-align: center;
+  }
+  .experience-cards {
+    width: 40%;
+  }
+  .experience-title {
+    font-size: 1.5rem;
+  }
+  .experience-image {
+    width: 50%;
+  }
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
   }
 }
